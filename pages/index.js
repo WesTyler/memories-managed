@@ -6,27 +6,29 @@ import Layout from '../layouts/Main';
 const small = '../static/coming_soon_sml.png';
 const large = '../static/coming_soon.png'
 
-const imgStyle = {
+const styles = {};
+
+styles.img = {
     display    : 'block',
     marginLeft : 'auto',
     marginRight: 'auto'
 };
-const mobileImgStyle = Object.assign({ width: '100%'}, imgStyle);
-const pStyle = {
+styles.mobileImg = Object.assign({ width: '100%'}, styles.img);
+styles.p = {
     textAlign: 'center'
 };
 
 const Index = () => (
     <Layout>
-        <p style={pStyle}>Coming Soon</p>
+        <p style={styles.p}>Coming Soon</p>
         <Desktop>
-            <img style={imgStyle} src={large}/>
+            <img style={styles.img} src={large}/>
         </Desktop>
         <Tablet>
-            <img style={mobileImgStyle} src={large}/>
+            <img style={styles.mobileImg} src={large}/>
         </Tablet>
         <Mobile>
-            <img style={mobileImgStyle} src={small}/>
+            <img style={styles.mobileImg} src={small}/>
         </Mobile>
     </Layout>
 );
