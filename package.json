@@ -15,6 +15,7 @@
   "dependencies": {
     "next": "6.x.x",
     "react": "16.x.x",
-    "react-dom": "16.x.x"
+    "react-dom": "16.x.x",
+    "react-responsive": "5.x.x"
   }
 }

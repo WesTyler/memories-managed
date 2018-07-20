@@ -1,5 +1,7 @@
 'use strict';
 
+import { Desktop, MobileDefault } from './Responsive';
+
 const navStyle = {
     backgroundColor: 'white',
     height         : 50,
@@ -21,13 +23,29 @@ const linkStyle = {
     width     : '100px'
 };
 
+const mobileLinkStyle = {
+    marginLeft: 0,
+    width     : '75px'
+};
+
 export default () => (
-    <div style={navStyle}>
-        <div style={linkHolderStyle}>
-            <a style={linkStyle}>Home</a>
-            <a style={linkStyle}>About</a>
-            <a style={linkStyle}>Blog</a>
-            <a style={linkStyle}>Contact</a>
-        </div>
+    <div>
+        <Desktop>
+            <div style={navStyle}>
+                <div style={linkHolderStyle}>
+                    <a style={linkStyle}>Home</a>
+                    <a style={linkStyle}>About</a>
+                    <a style={linkStyle}>Blog</a>
+                    <a style={linkStyle}>Contact</a>
+                </div>
+            </div>
+        </Desktop>
+        <MobileDefault>
+            <div style={navStyle}>
+                <div style={linkHolderStyle}>
+                    <a style={mobileLinkStyle}>Only</a>
+                </div>
+            </div>
+        </MobileDefault>
     </div>
 );

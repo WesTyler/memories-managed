@@ -1,5 +1,6 @@
 'use strict';
 
+import { Desktop, Tablet, Mobile } from '../components/Responsive';
 import Layout from '../layouts/Main';
 
 const small = '../static/coming_soon_sml.png';
@@ -10,6 +11,7 @@ const imgStyle = {
     marginLeft : 'auto',
     marginRight: 'auto'
 };
+const mobileImgStyle = Object.assign({ width: '100%'}, imgStyle);
 const pStyle = {
     textAlign: 'center'
 };
@@ -17,11 +19,15 @@ const pStyle = {
 const Index = () => (
     <Layout>
         <p style={pStyle}>Coming Soon</p>
-        <picture>
-            <source media='(max-width: 550px)' srcSet={small} />
-            <source media='(min-width: 551px)' srcSet={large} />
+        <Desktop>
             <img style={imgStyle} src={large}/>
-        </picture>
+        </Desktop>
+        <Tablet>
+            <img style={mobileImgStyle} src={large}/>
+        </Tablet>
+        <Mobile>
+            <img style={mobileImgStyle} src={small}/>
+        </Mobile>
     </Layout>
 );
 
