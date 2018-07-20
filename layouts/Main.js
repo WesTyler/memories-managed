@@ -2,6 +2,7 @@
 
 import Head from 'next/head';
 import Nav from '../components/Nav';
+import { Desktop } from '../components/Responsive';
 
 export default ({ children, title = 'Memories Managed Travel Co'}) => (
     <div>
@@ -25,8 +26,12 @@ export default ({ children, title = 'Memories Managed Travel Co'}) => (
         <header>
             <Nav />
         </header>
-        <main style={{ marginTop: 100 }}>
-            { children }
-        </main>
+        <Desktop>{
+            (matches) => {
+                const marginTop = matches ? 100 : 125;
+
+                return <main style={{ marginTop }}>{ children }</main>;
+            }
+        }</Desktop>
     </div>
 );
