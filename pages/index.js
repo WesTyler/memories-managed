@@ -3,15 +3,14 @@
 import { Desktop, Tablet, Mobile } from '../components/Responsive';
 import Layout from '../layouts/Main';
 
-const small = '../static/coming_soon_sml.png';
-const large = '../static/coming_soon.png'
+const castle = '../static/castle.jpg'
+const castleMobile = '../static/castle_mobile.jpg'
 
 const styles = {};
 
 styles.img = {
     display    : 'block',
-    marginLeft : 'auto',
-    marginRight: 'auto'
+    width: '100%'
 };
 styles.mobileImg = Object.assign({ width: '100%'}, styles.img);
 styles.p = {
@@ -20,15 +19,14 @@ styles.p = {
 
 const Index = () => (
     <Layout>
-        <p style={styles.p}>Coming Soon</p>
         <Desktop>
-            <img style={styles.img} src={large}/>
+            <img style={styles.img} src={castle}/>
         </Desktop>
         <Tablet>
-            <img style={styles.mobileImg} src={large}/>
+            <img style={styles.mobileImg} src={castle}/>
         </Tablet>
         <Mobile>
-            <img style={styles.mobileImg} src={small}/>
+            <img style={styles.mobileImg} src={castleMobile}/>
         </Mobile>
     </Layout>
 );

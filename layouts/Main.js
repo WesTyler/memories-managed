@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Nav from '../components/Nav';
 import { Desktop } from '../components/Responsive';
 
-export default ({ children, title = 'Memories Managed Travel Co'}) => (
+export default ({ children, title = 'Felicity Travel Co'}) => (
     <div>
         <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,7 +18,7 @@ export default ({ children, title = 'Memories Managed Travel Co'}) => (
             }
 
             body {
-                background: #F6BE8F;
+                background-color: #003b81;
                 font-family: 'SlimJoe';
                 margin: 0;
             }
@@ -26,12 +26,6 @@ export default ({ children, title = 'Memories Managed Travel Co'}) => (
         <header>
             <Nav />
         </header>
-        <Desktop>{
-            (matches) => {
-                const marginTop = matches ? 100 : 125;
-
-                return <main style={{ marginTop }}>{ children }</main>;
-            }
-        }</Desktop>
+        <main>{ children }</main>
     </div>
 );
