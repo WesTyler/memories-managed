@@ -60,11 +60,11 @@ export default class MobileNav extends React.Component {
                 {
                     this.state.displayMenu && (
                         <div style={inheritedStyles.menu}>
-                            <div style={inheritedStyles.menuItem}>Home</div>
-                            <div style={inheritedStyles.menuItem}>Destinations</div>
-                            <div style={inheritedStyles.menuItem}>Blog</div>
-                            <div style={inheritedStyles.menuItem}>Free Quote</div>
-                            <div style={inheritedStyles.menuItem}>Testimonials</div>
+                            <a href='/' style={inheritedStyles.menuItem}>Home</a>
+                            <a href='/destinations' style={inheritedStyles.menuItem}>Destinations</a>
+                            <a style={inheritedStyles.menuItem}>Blog</a>
+                            <a style={inheritedStyles.menuItem}>Free Quote</a>
+                            <a style={inheritedStyles.menuItem}>Testimonials</a>
                         </div>
                     )
                 }

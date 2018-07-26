@@ -1,7 +1,7 @@
 'use strict';
 
-const merge = (source, overrideSource) => {
-    return Object.assign({}, source, overrideSource);
+const merge = (source, overrideSource, ...additionalSources) => {
+    return Object.assign({}, source, overrideSource, ...additionalSources);
 };
 
 export {

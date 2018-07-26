@@ -10,8 +10,8 @@ export default () => (
             <div style={styles.desktop.content}>
                 <div style={styles.desktop.logo}> Felicity Travel Co.</div>
                 <div style={styles.desktop.links}>
-                    <a style={styles.desktop.link}>Home</a>
-                    <a style={styles.desktop.link}>Destinations</a>
+                    <a href='/' style={styles.desktop.link}>Home</a>
+                    <a href='/destinations' style={styles.desktop.link}>Destinations</a>
                     <a style={styles.desktop.link}>Blog</a>
                     <a style={styles.desktop.link}>Free Quote</a>
                     <a style={styles.desktop.link}>Testimonials</a>

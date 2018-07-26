@@ -18,10 +18,12 @@ const contentBase = {
 
 styles.desktop.content = merge(contentBase, {
     lineHeight: '50px',
-    margin: '25px'
+    margin: '25px',
+    zIndex: 999
 });
 
 styles.desktop.logo = {
+    fontSize: '20px',
     width: '40%'
 };
 
@@ -33,9 +35,11 @@ styles.desktop.links = {
 };
 
 styles.desktop.link = {
+    color: 'inherit',
     fontSize   : '14px',
     letterSpacing: '0.075em',
-    marginRight: '20px'
+    marginRight: '20px',
+    textDecoration: 'none'
 };
 
 styles.desktop.social = merge(styles.desktop.link, { marginRight: '10px' });
@@ -62,7 +66,9 @@ styles.mobile.menu = merge(contentBase, {
 });
 
 styles.mobile.menuItem = {
-    marginTop: '20px'
+    color: 'inherit',
+    marginTop: '20px',
+    textDecoration: 'none'
 };
 
 styles.mobile.hamburger = {
