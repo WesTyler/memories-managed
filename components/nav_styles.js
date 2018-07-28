@@ -61,11 +61,12 @@ styles.mobile.headerItem = {
 
 styles.mobile.menu = merge(contentBase, {
     alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
     display: 'flex',
     flexDirection: 'column',
+    paddingBottom: '15px',
     top: 96,
-    zIndex: 1
+    zIndex: 10
 });
 
 styles.mobile.menuItem = {

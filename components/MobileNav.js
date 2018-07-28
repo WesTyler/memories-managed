@@ -31,7 +31,7 @@ export default class MobileNav extends React.Component {
         if (this.state.displayMenu) {
             navFill.height = '100vh';
             navFill.width = '100%';
-            navFill.backgroundColor = 'rgba(0, 59, 129, 0.7)';
+            navFill.backgroundColor = 'rgba(0, 59, 129, 0.9)';
             navFill.position = 'absolute';
         }
 
@@ -59,12 +59,23 @@ export default class MobileNav extends React.Component {
                 </div>
                 {
                     this.state.displayMenu && (
-                        <div style={inheritedStyles.menu}>
-                            <a href='/' style={inheritedStyles.menuItem}>Home</a>
-                            <a href='/destinations' style={inheritedStyles.menuItem}>Destinations</a>
-                            <a style={inheritedStyles.menuItem}>Blog</a>
-                            <a style={inheritedStyles.menuItem}>Free Quote</a>
-                            <a style={inheritedStyles.menuItem}>Testimonials</a>
+                        <div>
+                            <div style={inheritedStyles.menu}>
+                                <a href='/' style={inheritedStyles.menuItem}>Home</a>
+                                <a href='/destinations' style={inheritedStyles.menuItem}>Destinations</a>
+                                <a style={inheritedStyles.menuItem}>Blog</a>
+                                <a style={inheritedStyles.menuItem}>Free Quote</a>
+                                <a style={inheritedStyles.menuItem}>Testimonials</a>
+                            </div>
+                            <div style={{
+                                width: '100vw',
+                                height: 'calc(100vh - 96px)',
+                                position: 'absolute',
+                                top: '96px',
+                                zIndex: 9
+                            }}
+                            onClick={this.handleClick.bind(this)}
+                            ></div>
                         </div>
                     )
                 }
