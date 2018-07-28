@@ -9,7 +9,11 @@ styles.img = {
     width: '100%'
 };
 
-styles.mobileImg = Object.assign({ width: '100%'}, styles.img);
+styles.mobileImg = {
+    display    : 'block',
+    marginLeft: '50%',
+    transform : 'translateX(-50%)'
+};
 
 styles.p = {
     textAlign: 'center'
@@ -35,7 +39,7 @@ styles.parallaxFront = merge(styles.parallaxBase, {
     width: '100%',
     backgroundColor: 'rgba(255, 255, 255, 0.85)',
     transform: 'translateZ(0)',
-    top: '575px'
+    top: '540px'
 });
 
 styles.parallaxBack = merge(styles.img, styles.parallaxBase, {
@@ -69,13 +73,12 @@ styles.definitionDecoration = merge(styles.definitionMain, {
 
 styles.mission = {
     fontFamily: 'Oswald',
-    fontSize: '36px',
+    fontSize: '2vw',
     fontWeight: 'light',
     letterSpacing: '0.075em',
-    margin: '10px auto',
-    padding: '5px',
-    textAlign: 'center',
-    width: '75%'
+    position: 'absolute',
+    left: '45vw',
+    top: '18vh'
 };
 
 export default styles;

@@ -19,8 +19,13 @@ export default ({ children, title = 'Felicity Travel Co'}) => (
             }
 
             @font-face {
-                font-family: 'BigJohn';
-                src: url('./static/BIG JOHN.otf');
+                font-family: 'Madina';
+                src: url('./static/Madina Script.otf');
+            }
+
+            @font-face {
+                font-family: 'MadinaOrnaments';
+                src: url('./static/Madina Clean Ornaments.otf');
             }
 
             body {

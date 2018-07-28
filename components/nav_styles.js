@@ -8,7 +8,7 @@ const styles = {
 }
 
 const contentBase = {
-    color: 'white',
+    color: 'black',
     display: 'flex',
     position: 'fixed',
     top: 0,
@@ -17,8 +17,9 @@ const contentBase = {
 };
 
 styles.desktop.content = merge(contentBase, {
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
     lineHeight: '50px',
-    margin: '25px',
+    padding: '10px 25px 0',
     zIndex: 999
 });
 
@@ -46,8 +47,10 @@ styles.desktop.social = merge(styles.desktop.link, { marginRight: '10px' });
 
 styles.mobile.content = merge(contentBase, {
     alignItems: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
     fontSize: '12px',
-    padding: '20px'
+    padding: '20px',
+    zIndex: 1
 });
 
 styles.mobile.headerItem = {
@@ -58,11 +61,11 @@ styles.mobile.headerItem = {
 
 styles.mobile.menu = merge(contentBase, {
     alignItems: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '20px',
-    paddingLeft: '20px',
-    top: 40
+    top: 96,
+    zIndex: 1
 });
 
 styles.mobile.menuItem = {
@@ -74,7 +77,7 @@ styles.mobile.menuItem = {
 styles.mobile.hamburger = {
     width: '20px',
     height: '2px',
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     margin: '5px auto'
 };
 

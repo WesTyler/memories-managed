@@ -42,7 +42,7 @@ styles.hamburgerBox = {
 };
 
 const psuedoClass = {
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     borderRadius: '4px',
     content: '',
     display: 'block',
