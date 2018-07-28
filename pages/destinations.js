@@ -11,6 +11,8 @@ const disneyworld = '../static/destinations_disneyworld.jpg';
 const disneyworldMobile = '../static/destinations_disneyworld_mobile.jpg';
 const otherdisney = '../static/destinations_other.jpg';
 const otherdisneyMobile = '../static/destinations_other_mobile.jpg';
+const universal = '../static/destinations_universal.jpg';
+const universalMobile = '../static/destinations_universal_mobile.jpg';
 const cruise = '../static/destinations_cruise.jpg';
 const cruiseMobile = '../static/destinations_cruise_mobile.jpg';
 
@@ -29,7 +31,7 @@ export default () => (
         <Desktop>
             <Destination destination='disney-destinations' imageSrc={otherdisney} title='Disney Destinations'/>
             <Destination destination='disneyworld' imageSrc={disneyworld} title='Disney World'/>
-            <Destination destination='universal' imageSrc={otherdisney} title='Universal Studios'/>
+            <Destination destination='universal' imageSrc={universal} title='Universal Studios'/>
             <Destination destination='cruises' imageSrc={cruise} title='Cruises'/>
         </Desktop>
         <Mobile>
@@ -48,7 +50,7 @@ export default () => (
                 top: 'calc(96px + (2 * (100% - 96px) / 4))'
             })}>
                 <div style={{color: 'white', padding: '5px',  position: 'absolute', width: '100vw', textAlign: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)', zIndex: 1}}>Universal Studios</div>
-                <img style={{marginLeft: '5%', marginTop: '5%', transform: 'translateY(-30%) translateX(-10%)'}} src={cruiseMobile}></img>
+                <img style={{marginLeft: '5%', marginTop: '5%', transform: 'translateY(-30%) translateX(-10%)'}} src={universalMobile}></img>
             </div>
             <div style={merge(styles.mobileDestination, {
                 top: 'calc(95px + (3 * (100% - 96px) / 4))'
