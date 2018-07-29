@@ -31,7 +31,6 @@ export default class MobileNav extends React.Component {
         if (this.state.displayMenu) {
             navFill.height = '100vh';
             navFill.width = '100%';
-            navFill.backgroundColor = 'rgba(0, 59, 129, 0.9)';
             navFill.position = 'absolute';
         }
 
@@ -63,7 +62,7 @@ export default class MobileNav extends React.Component {
                             <div style={inheritedStyles.menu}>
                                 <a href='/' style={inheritedStyles.menuItem}>Home</a>
                                 <a href='/destinations' style={inheritedStyles.menuItem}>Destinations</a>
-                                <a style={inheritedStyles.menuItem}>Blog</a>
+                                <a href='/about' style={inheritedStyles.menuItem}>About</a>
                                 <a style={inheritedStyles.menuItem}>Free Quote</a>
                                 <a style={inheritedStyles.menuItem}>Testimonials</a>
                             </div>

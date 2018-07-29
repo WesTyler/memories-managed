@@ -17,7 +17,7 @@ const Index = () => (
                         <div style={{height: '140px', width: '60vw', margin: 'auto'}}>
                             <div style={{display: 'inline-block', fontFamily: 'MadinaOrnaments', padding: '10px', fontSize: '5vw', lineHeight: '1em'}}>I</div>
                             <div style={{display: 'inline-block', fontFamily: 'Madina', fontSize: '6vw', paddingLeft: '10px'}}>Felicity Travel Co</div>
-                            <div style={{display: 'inline-block', fontFamily: 'MadinaOrnaments', padding: '10px', fontSize: '5vw'}}>x</div>
+                            <div style={{display: 'inline-block', fontFamily: 'MadinaOrnaments', padding: '10px', position: 'relative', fontSize: '5vw', top: '30px'}}>x</div>
                             <div style={styles.mission}>Our intentional planning leads to your immense joy</div>
                         </div>
                     </div>

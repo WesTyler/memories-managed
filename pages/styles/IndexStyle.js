@@ -78,7 +78,7 @@ styles.mission = {
     letterSpacing: '0.075em',
     position: 'absolute',
     left: '45vw',
-    top: '18vh'
+    top: '130px'
 };
 
 export default styles;

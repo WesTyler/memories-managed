@@ -28,6 +28,11 @@ export default ({ children, title = 'Felicity Travel Co'}) => (
                 src: url('./static/Madina Clean Ornaments.otf');
             }
 
+            @font-face {
+                font-family: 'Superclarendon';
+                src: url('./static/superclarendon.ttf');
+            }
+
             body {
                 background-color: #B1D1E8;
                 font-family: 'SlimJoe';
