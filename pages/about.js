@@ -148,7 +148,7 @@ export default () => (
                         })}>
                             I am also a Mama to the sweetest little girl in life- she is our miracle baby and my biggest dream come true.
                             I am married to my high school sweetheart and I could not even begin to do this without his support and belief in me. I still love singing and leading worship and I am big into all things crafting when there is time.
-                            I constantly have to pinch myself that this is my reality! God is so cool and in the business of miracles- the very fact that I am here today,  with a baby and working for Disney is proof that He is a miracle working God!
+                            I constantly have to pinch myself that this is my reality! God is so cool and in the business of miracles- the very fact that I am here today, with a baby and working for Disney is proof that He is a miracle working God!
                         </p>
                         <p style={merge(styles.content, {
                             margin: '25px auto 0px',
