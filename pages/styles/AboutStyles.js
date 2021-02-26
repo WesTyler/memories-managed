@@ -5,9 +5,8 @@ import { merge } from '../../utils';
 const styles = {};
 
 styles.logo = {
-    fontFamily: 'Madina',
-    fontSize: '6vw',
-    margin: '75px 0 25px 50px'
+    margin: '75px 0 25px 50px',
+    height: '160px'
 };
 
 styles.title = {

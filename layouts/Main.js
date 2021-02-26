@@ -20,7 +20,7 @@ export default ({ children, title = 'Felicity Travel Co'}) => (
 
             @font-face {
                 font-family: 'Madina';
-                src: url('./static/Madina Script.otf');
+                src: url('./static/MadinaScriptOptimized.otf');
             }
 
             @font-face {

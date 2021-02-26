@@ -34,7 +34,8 @@ styles.title = {
 
 styles.destinationImage = {
     marginLeft: '50%',
-    transform : 'translateX(-50%)'
+    transform : 'translateX(-50%)',
+    height: '100vh'
 };
 
 export default class Destination extends React.Component {

@@ -13,9 +13,10 @@
   "author": "Wes Tyler (wtyler@xogrp.com)",
   "license": "ISC",
   "dependencies": {
-    "next": "6.x.x",
-    "react": "16.x.x",
-    "react-dom": "16.x.x",
-    "react-responsive": "5.x.x"
+    "next": "^7.0.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-responsive": "5.x.x",
+    "vercel": "^21.3.0"
   }
 }

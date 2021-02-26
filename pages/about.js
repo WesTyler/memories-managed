@@ -17,9 +17,7 @@ export default () => (
                     width: '100vw'
                 })} src={about}/>
                 <div style={parallax.parallaxFront}>
-                    <div style={styles.logo}>
-                        About Felicity
-                    </div>
+                    <img draggable='false' style={styles.logo} src='../static/typography_about_logo.svg'></img>
                     <div style={styles.container}>
                         <div style={styles.title}>Our Mission</div>
                         <p style={styles.content}>
@@ -134,22 +132,22 @@ export default () => (
                             margin: '0 auto',
                             width: '75%'
                         })}>
-                            What I have found is that, I love working with families. All kinds of families!
-                            Big or small, big reunions, school trips, honeymooners! etc- it is the people that bring magic to my job.
+                            What I have found is that I love working with families. All kinds of families!
+                            Big or small, big reunions, school trips, honeymooners, etc! It the is people that bring magic to my job.
                         </p>
                         <p style={merge(styles.content, {
                             margin: '25px auto 0px',
                             width: '75%'
                         })}>
                             I started out as a musician dreaming of the stage- spent time as a teacher, teaching sweet kiddos to
-                            sing- worked an 8-5 at a j-o-b in administration- and finally found my true calling- making unforgettable trips for unforgettable people.
+                            sing- worked an 8-5 at a j-o-b in administration- and finally found my true calling: making unforgettable trips for unforgettable people.
                         </p>
                         <p style={merge(styles.content, {
                             margin: '25px auto 0px',
                             width: '75%'
                         })}>
                             I am also a Mama to the sweetest little girl in life- she is our miracle baby and my biggest dream come true.
-                            I am married to my high school sweetheart and I could not even begin to do this without his support and belief in me (You’ll also see his amazing web skills all over this website!). I still love singing and leading worship and I am big into all things crafting when there is time.
+                            I am married to my high school sweetheart and I could not even begin to do this without his support and belief in me. I still love singing and leading worship and I am big into all things crafting when there is time.
                             I constantly have to pinch myself that this is my reality! God is so cool and in the business of miracles- the very fact that I am here today,  with a baby and working for Disney is proof that He is a miracle working God!
                         </p>
                         <p style={merge(styles.content, {

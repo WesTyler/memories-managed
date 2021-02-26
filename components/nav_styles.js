@@ -37,6 +37,7 @@ styles.desktop.links = {
 
 styles.desktop.link = {
     color: 'inherit',
+    fontWeight: 'bold',
     fontSize   : '14px',
     letterSpacing: '0.075em',
     marginRight: '20px',
